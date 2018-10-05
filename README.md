@@ -57,6 +57,17 @@ export default () => {
 });
 ```
 
+If you're using React 16, you can have the component return the translated string directly.
+
+```js
+import React from 'react';
+import {TransateRaw as Translate} from 'fusion-plugin-i18n-react';
+
+export default () => {
+  return <Translate id="test" data={{name: 'world'}} />);
+}
+```
+
 #### Higher order component
 
 A higher order component is provided to allow passing translations to third-party or native components. If you are using the `translate` function directly, be aware that you can only pass in a string literal to this function. This plugin uses a babel transform and non-string literals (e.g. variables) will break.

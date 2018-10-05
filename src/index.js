@@ -20,6 +20,7 @@ import {withTranslations} from './with-translations';
 export default I18n;
 export {I18nToken, I18nLoaderToken, HydrationStateToken, createI18nLoader};
 export {Translate} from './translate';
+export {TranslateRaw} from './translate-raw';
 
 type TranslatePropType = {
   translate: (key: string, interpolations: Object) => string,
